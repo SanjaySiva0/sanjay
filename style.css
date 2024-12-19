@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  /* Game Board Styles */
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+
+  
+  .tile.green {
+    background-color: #6aaa64; /* Correct letter and position */
+    color: white;
+  }
+  
+  .tile.yellow {
+    background-color: #c9b458; /* Correct letter, wrong position */
+    color: white;
+  }
+  
+  .tile.gray {
+    background-color: #787c7e; /* Incorrect letter */
+    color: white;
+  }
+  
+  /* Input and Button Styles */
+  .input-container {
+    margin-top: 20px;
+  }
+  
+  #guess-input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 150px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Feedback Text */
+  #feedback {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #ffcc00;
+  }
+  
